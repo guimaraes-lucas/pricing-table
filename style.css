@@ -30,9 +30,6 @@
 
 .center {
     position: absolute;
-    width: 1000px;
-    height: 550px;
-    border: 1px solid green;
 
     top: 25%;
     bottom: 0;
@@ -43,7 +40,7 @@
 }
 
 .bottom {
-    background-color: var(--page-background);
+    background-color: #F9FBFC;
 }
 
 /* Text styles */
@@ -65,9 +62,11 @@
 }
 
 /* Price Cards Styles */
-.prices {
+.cards {
     width: 1000px;
     height: 550px;
+
+    gap: 20px;
     
     display: flex;
     align-items: center;
@@ -75,16 +74,117 @@
 }
 
 .side {
+    display: flex;
+    flex-direction: column;
+
     width: 355px;
     height: 470px;
 
-    border: 1px solid red;
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px 0px rgba(142, 150, 185, 0.25);
+
+    background-color: var(--page-background);
+
+    font-weight: 600;
+}
+
+.side h3 {
+    padding: 30px 0 0 30px;
+}
+
+.side span{
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 5px;
+    padding-left: 31px;
+}
+.side span h1 {
+    color: #1E2338;
+}
+.side span h4 {
+    color: var(--gray);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.side p {
+    color: #828799;
+    font-size: 14px;
+    font-weight: 400;
+
+    padding-left: 31px;
+    margin-top: 10px;
+
+    padding-bottom: 20px;
+    border-bottom: 1px solid #EEE;
+}
+
+.side ul {
+    padding-left: 31px;
+    list-style: none;
+}
+.side ul li {
+    background: url(./assets/check.svg) no-repeat left center;
+    padding-left: 20px;
+    line-height: 1.5; 
+
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.side button {
+    width: 296px;
+    padding: 12px 24px;
+
+    border-radius: 10px;
+    border: 1px solid var(--blue);
+    background-color: var(--page-background);
+
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--blue);
+
 }
 
 .middle {
+    display: flex;
+    flex-direction: column;
+
+
     width: 355px;
     height: 490px;
 
-    border: 1px solid blue;
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px 0px rgba(142, 150, 185, 0.25);
+
+    background-color: var(--page-background);
 }
 
+.title {
+    height: 76px;
+    padding: 0 15px;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0px 1px 2px 0px rgba(142, 150, 185, 0.25);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+    ;
+    background-color: var(--yellow);
+}
+
+.title h3 {
+    color: var(--blue);
+}
+
+.title span{
+    border-radius: 40px;
+    padding: 8px 24px;
+
+    background-color: var(--blue);
+    color: var(--page-background);
+}
