@@ -17,10 +17,74 @@
     --page-background: #f9fbfc;
 }
 
+/* Page background and Styles*/
 .top {
     background-color: var(--blue);
+
+    height: 50vh;
+
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+.center {
+    position: absolute;
+    width: 1000px;
+    height: 550px;
+    border: 1px solid green;
+
+    top: 25%;
+    bottom: 0;
+    left: 23%;
+    right: 50%;
+   
+
 }
 
 .bottom {
     background-color: var(--page-background);
 }
+
+/* Text styles */
+.text-top {
+    color: var(--page-background);
+
+    text-align: center;
+    margin-top: 100px;
+}
+
+.text-top h1 {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.text-top p {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* Price Cards Styles */
+.prices {
+    width: 1000px;
+    height: 550px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side {
+    width: 355px;
+    height: 470px;
+
+    border: 1px solid red;
+}
+
+.middle {
+    width: 355px;
+    height: 490px;
+
+    border: 1px solid blue;
+}
+
