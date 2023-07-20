@@ -1,4 +1,4 @@
-<h1 align='center'> Pricing Table </h1>
+<h1 align="center"> Pricing Table </h1>
 
 ## Tabela de Preços
 
